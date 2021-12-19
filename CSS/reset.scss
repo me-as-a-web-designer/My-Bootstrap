@@ -1,5 +1,6 @@
 
-@import "form-elements.css"; /* Using a string */
+@import 'form-elements';
+
 /*----------------------most of this from this persons css reset--------https://elad.medium.com/the-new-css-reset-53f41f13282e----------------------------------------------*/
 /*------------------------------https://elad.medium.com/the-new-css-reset-53f41f13282e----------------------------------------------*/
 /* 
@@ -10,6 +11,7 @@
     all: unset;
     display: revert;
 }
+body{font-size:20px;}
 
 /* works on every element except for content elements */
 *:not(iframe, canvas, img, svg, video):not(svg *) {    
