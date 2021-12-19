@@ -1,8 +1,14 @@
 ---
 ---
-html{font-size:31.25%; /* every 1rem eqal 5px */}
+---
+---
+html{font-size:32.25%; /* every 1rem eqal 5px */}
 
 .custom-checkbox{width:25rem; height:25rem; transition:0.3s;}
+
+
+
+
 
 /* 
    Styled Checkbox 
@@ -18,7 +24,7 @@ html{font-size:31.25%; /* every 1rem eqal 5px */}
   height:20rem; 
   padding:2rem;
   border-radius:10rem; 
-  background-color:rgb(var(--mistyRose));
+  background-color:red;
   transition:0.2s;
   &::before{
     content:""; 
@@ -28,20 +34,21 @@ html{font-size:31.25%; /* every 1rem eqal 5px */}
     width:16rem; 
     height:16rem; 
     border-radius:50%;
-    border:solid 4rem rgb(var(--white)); 
-    background-color:rgb(var(--rouge));
+    border:solid 4rem green; 
+    background-color:orange;
   }
+  
   &:checked{
-    background-color:rgb(var(--azureishWhite));
+    background-color:purple;
     &::before{
-      background-color:rgb(var(--caribbeanGreen)); 
+      background-color:yellowgreen; 
       transform:translateX(18rem);}
   }
   &:hover, 
   &:focus{
     &:not(:disabled){
       outline:none; 
-      box-shadow:0 0 1px #fff, 0 0 3px #fff, 0 0 6px #0ba9ca; 
+      box-shadow:0 0 1px #fff, 0 0 3px #fff, 0 0 6px #3dcbe7; 
       cursor:pointer;
     }
   }
@@ -66,14 +73,16 @@ body{
   padding:0;
 }
 
-
-
-
 /* remove/show checkbox with styled yellow label */
 input#layers{
-  position:fixed; top:20px; left:15px; z-index:11;
-  display:block; padding:5px; border:solid 1px rgb(136 136 136 / 0.7); border-radius:4px;
-  background-color:rgb(255 221 64 / 0.8);
+  position:fixed;
+  top:20px;
+  left:15px;
+  z-index:11;
+  display:block; 
+  padding:5px; 
+  border:solid 1px green; border-radius:4px;
+  background-color:rgb(221, 24, 57);
   margin-right:5px;
   &:checked ~ label::before{content:attr(data-checked);}
   &:not(:checked) ~ label::before{content:attr(data-unchecked);}
@@ -81,7 +90,7 @@ input#layers{
 label{
   position:fixed; z-index:10; left:10px; top:10px;
   display:block; padding:10px; padding-left:30px; border-radius:4px;
-  background-color:rgb(255 221 64 / 0.8); font-size:3.5rem;
+  background-color:lightcoral; font-size:3.5rem;
 }
 
 
