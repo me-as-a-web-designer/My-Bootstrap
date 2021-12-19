@@ -15,5 +15,5 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-sass:
-    sass_dir: _sass
+#sass:
+    #sass_dir: _sass
